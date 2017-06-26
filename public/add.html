@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/add.css"/>
+</head>
+<body>
+<div id="header">
+
+</div>
+<div id="section">
+        <form class="add-new" enctype="multipart/form-data" style="margin-bottom: 2em">
+            <div class="form-group">
+                <a href="javascript:;" id="checkImg">选择封面</a>
+                <a href="javascript:;" id="uploadImg">上传图片</a>
+                <input type="file" id="uploadCover"/>
+                <img id="image" src="img/header_image1.jpg"/>
+            </div>
+            <div class="form-group">
+                <label for="new-title" >标题:</label>
+                <input type="text" id="new-title" name="newTitle"/>
+            </div>
+            <div class="form-group">
+                <label for="new-detail" >详情:</label>
+                <textarea id="new-detail" name="newDetail"  rows="10" cols="50"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="newsType">轻单类型：</label>
+                <select name="newsType" id="newsType">
+                    <option value="-1">请选择</option>
+                    <option value="1">极客科技</option>
+                    <option value="2">生活方式</option>
+                    <option value="3">文艺范儿</option>
+                    <option value="4">设计艺术</option>
+                    <option value="5">吃喝玩乐</option>
+                    <option value="6">喜闻乐见</option>
+                    <option value="7">其他</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="img"/>
+                <button type="button">提交</button>
+                <button type="reset">重置</button>
+            </div>
+        </form>
+</div>
+
+<div id="footer">
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/add.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.section-header {
+    border-bottom: 3px solid #57cdf9;
+}
+.add-new{
+    padding:1em;
+    margin: 5em auto;
+    border:1px solid #57cdf9;
+    border-radius: 5px;
+    width:70%;
+}
+.add-new .form-group{
+    width:80%;
+    margin:0 auto;
+}
+.add-new .form-group:last-child{
+    text-align: center;
+}
+.add-new .form-group:last-child button{
+    margin-right: 15px;
+    padding: 9px 15px;
+    border: 1px solid #57cdf9;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #57cdf9;
+    background: #fff;
+    outline: none;
+}
+.add-new .form-group:last-child button:hover{
+    color: #fff;
+    background: #57cdf9;
+}
+.add-new .form-group img{
+    width:100%;
+    vertical-align: bottom;
+}
+#uploadCover{
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+}
+.add-new .form-group+.form-group{
+    padding:1em 0;
+    border-top:1px solid #57cdf9;
+}
+.form-group input,.form-group textarea{
+    width:100%;
+    outline:none;
+    border:none;
+    margin-top: 1em;
+}
+.add-new .form-group:first-child{
+    position: relative;
+}
+.add-new .form-group:first-child a:first-child{
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.add-new .form-group:first-child a:nth-child(2){
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+@media screen and (max-width: 1024px){
+    .add-new{
+        margin: 5em auto;
+        width:80%;
+    }
+}
+@media screen and (max-width: 768px){
+    .add-new{
+        margin: 2em auto;
+        width:90%;
+    }
+    .add-new .form-group{
+        margin:0.5em auto;
+    }
+    .add-new .form-group{
+        width:100%;
+    }
+}

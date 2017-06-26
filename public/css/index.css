@@ -1,0 +1,353 @@
+
+/************header**************/
+.section-header,.section-fix {
+    height: 50px;
+    border-bottom-width: 0;
+}
+.section-header {
+    height: 53px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    background: #f5f5f5;
+    border-bottom: 3px solid #57cdf9;
+}
+
+.section-header .top-header {
+    zoom: 1;
+    position: relative;
+    z-index: 340;
+    height: 50px;
+    background: rgba(255,255,255,0.97);
+}
+
+.section-header .top-header .area-logo {
+    float: left;
+    padding: 5px 10px;
+    margin-left: 15px;
+}
+
+.section-header .cate-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.section-header .cate-header .area-cate {
+    display: inline-block;
+    position: relative;
+    z-index: 340;
+    overflow: hidden;
+    overflow-x: auto;
+    margin-left: -50px;
+    vertical-align: middle;
+}
+.section-header .cate-header .list-cate li {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+#area-menu {
+    float: right;
+    display: inline-block;
+    margin-right: 15px;
+    padding: 9px 15px;
+    border:1px solid #57cdf9;
+    border-radius: 5px;
+    margin-top:5px;
+}
+#area-menu .btn-login{
+    color:#57cdf9;
+}
+#login-after{
+    float: right;
+    display: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    margin-top:5px;
+    position: relative;
+}
+#login-after>a{
+    margin-right: 15px;
+    padding: 9px 15px;
+    border:1px solid #57cdf9;
+    border-radius: 5px;
+    margin-top:5px;
+    color:#57cdf9;
+}
+#login-after>a.active,#login-after>a:hover{
+    background: #57cdf9;
+    color:#fff;
+}
+#dorpdown{
+    display: none;
+    position:absolute;
+    bottom: -9em;
+    right:2em;
+    width:7em;
+    background: #fff;
+    border:1px solid #57CDF9;
+    border-radius: 5px;
+}
+#dorpdown i{
+    width: 1em;
+    height: 1em;
+    border-top:1px solid #57CDF9;
+    border-left:1px solid #57CDF9;
+    position:absolute;
+    top: -0.5em;
+    left:50%;
+    transform: rotate(45deg);
+    background: #fff;
+}
+#dorpdown li{
+    text-align: center;
+    margin:1em;
+}
+#dorpdown li a{
+    color:#57cdf9;
+}
+.btn-menu-toggle{
+    float: right;
+    display: none;
+}
+.popup{
+    width:100%;
+    background: #f5f5f5;
+    position:absolute;
+    top:50px;
+    right:0;
+    display: none;
+}
+.popup .popup-menu li{
+    float: left;
+    width: 30%;
+    margin:5px;
+    border:1px solid transparent;
+    border-radius: 5px;
+}
+.popup .popup-menu li a{
+    color:#fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding:30px 5px;
+}
+.popup .popup-menu li a.active{
+    color:#57cdf9;
+}
+.menu-geek{
+    background: rgba(64,64,64,0.9);
+}
+.menu-lifestyle{
+    background: rgba(147,83,82,0.9);
+}
+.menu-culture{
+    background: rgba(45,168,36,0.9);
+}
+.menu-art{
+    background: rgba(250,95,153,0.9);
+}
+.menu-entertainment{
+    background: rgba(251,113,34,0.9);
+}
+.menu-lol,.menu-lol{
+    background: rgba(255,83,73,0.9);
+}
+.menu-misc{
+    background: rgba(172,121,213,0.9);
+}
+.popup .popup-menu li.menu-best{
+    border-color: rgba(87,205,249,0.9);
+    color: rgba(87,205,249,0.9);
+}
+.section-bg {
+    clear: both;
+    height: 300px;
+    overflow: hidden;
+}
+.skin-bg {
+    background: #57CDF9;
+}
+.section-bg .cont-main {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+}
+.section-bg .cont-main .spot {
+    display: inline-block;
+    margin-bottom: 42px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: #fff;
+}
+.section-bg .cont-main .area-tag a {
+    display: inline-block;
+    margin: 0 15px 25px;
+    padding: 5px 20px;
+    color: #fff;
+    background: rgba(255,255,255,0.3);
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}
+#section{
+    width:80%;
+    margin:15px auto;
+}
+.section-card{
+    float:left;
+    width:48%;
+    border:1px solid #ddd;
+    margin-bottom: 15px;
+    margin-right:1%;
+}
+.section-top{
+    padding:10px;
+}
+.section-top img{
+    float: left;
+    width:3em;
+    border:1px solid transparent;
+    border-radius: 5px;
+    margin:0 10px;
+}
+.section-top p{
+    padding:1px 0 5px;
+}
+.section-top span{
+    font-size: 0.5em;
+    color:#aaa;
+}
+.section-card .img-w{
+    width:100%;
+}
+.section-content{
+    margin:10px;
+    text-align: center;
+}
+.section-content h2{
+    font-weight: 500;
+}
+.section-content p{
+    margin:20px 0;
+}
+footer{
+    width:100%;
+    text-align: center;
+    color:#B1B5C0;
+    font-size: 0.3em;
+    margin-bottom: 40px;
+}
+footer ul{
+    padding:60px 10px 0;
+}
+footer ul li{
+    display: inline-block;
+    padding:0 10px;
+    text-align: center;
+    font-size: 1em;
+}
+footer ul li a{
+    color:#B1B5C0;
+    font-size: 1em;
+}
+footer ul li:nth-child(2)~li{
+    border-left:1px solid #ddd;
+}
+
+.alert{
+    padding-top: 10px;
+    display: none;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .section-header .cate-header {
+        background:#f5f5f5;
+        top: 50px;
+    }
+    .section-fix {
+        height: 90px;
+        border-bottom-width: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    .section-header .cate-header {
+        background:#f5f5f5;
+        top: 50px;
+    }
+    .section-header .top-header {
+        z-index: 350;
+    }
+    #area-menu {
+        padding: 6px 9px;
+    }
+    #login-after{
+        margin-right: 0;
+    }
+    #login-after>a{
+        margin-right: 0;
+        border:none;
+        padding: 9px 9px;
+    }
+    .btn-menu-toggle{
+        float: right;
+        display: inline-block;
+        position: absolute;
+        top:0;
+        right:0;
+        background: #f5f5f5;
+        z-index: 340;
+        padding: 0 20px;
+    }
+    .section-header .cate-header .area-cate{
+        margin-left: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+        margin-right: 30px;
+    }
+    .section-bg .cont-main {
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .section-bg{
+        margin-top:0;
+    }
+    .section-bg .cont-main .spot {
+        margin-bottom: 20px;
+    }
+    .section-bg .cont-main .area-tag a{
+        font-size: 0.5em;
+        display: inline-block;
+        padding: 5px 20px;
+        margin:0.5em;
+    }
+    .section-card{
+        width:100%;
+    }
+    footer ul{
+        padding:35px 10px 0;
+    }
+    footer{
+        margin-bottom: 20px;
+    }
+    #section{
+        width:100%;
+    }
+}

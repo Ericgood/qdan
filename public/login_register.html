@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/login_register.css"/>
+</head>
+<body>
+<div class="modals">
+    <div class="modal-shade">
+        <a href="javascript:;" class="close">×</a>
+        <div class="register">
+            <div class="navs">
+                <button>登录</button>
+                <button class="active">注册</button>
+            </div>
+            <form id="register">
+                <h3>立即进入一个更轻的世界</h3>
+                <div class="email">
+                    <input type="text" placeholder="用户名" name="uname" required="required"/>
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="密码" name="password" required="required"/>
+                </div>
+                <p>用户名密码不能为空</p>
+                <div class="clear">
+                    <input type="checkbox" checked/>同意用户协议
+                    <button class="submit rt">注册</button>
+                </div>
+            </form>
+            <div class="clear last"><a href="#">已有账户？</a></div>
+        </div>
+        <div class="login active">
+            <div class="navs">
+                <button class="active">登录</button>
+                <button>注册</button>
+            </div>
+            <form id="login" class="clear">
+                <h3>立即进入一个更轻的世界</h3>
+                <div class="email">
+                    <input type="text" placeholder="用户名" name="uname" required="required"/>
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="密码" name="password" required="required"/>
+                </div>
+                <p class="alertErro">用户名密码不能为空</p>
+                <div class="clear">
+                    <input type="checkbox" checked/>保持登录
+                    <button class="submit rt">登录</button>
+                </div>
+            </form>
+            <div class="miss-password clear">忘记密码</div>
+            <div><a href="#">还未注册？</a></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login_register.js"></script>
+</body>
+</html>
