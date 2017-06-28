@@ -5,7 +5,8 @@ var addOther=require("./addOther");
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var app=express();
-http.createServer(app).listen(8080);
+var portId=5050;
+http.createServer(app).listen(portId);
 
 app.use(express.static('public'));
 

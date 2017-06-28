@@ -2,8 +2,11 @@ const mysql=require("mysql");
 const qs=require('querystring');
 const fs = require("fs");
 var pool=mysql.createPool({
-    user:'root',
-    database:'qingdan',
+    host     : process.env.MYSQL_HOST,
+    port     : process.env.MYSQL_PORT,
+    user     : process.env.ACCESSKEY,
+    password : process.env.SECRETKEY,
+    database : 'app_' + process.env.APPNAME,
     connectionLimit:5
 });
 function mysqlCoon(req,res,newsType){
